@@ -1,10 +1,11 @@
 import { NextAuthOptions } from "next-auth";
 import TwitchProvider from "next-auth/providers/twitch";
 import { PrismaAdapter } from "@auth/prisma-adapter";
+import type { Adapter } from "next-auth/adapters";
 import { prisma } from "./prisma";
 
 export const authOptions: NextAuthOptions = {
-  adapter: PrismaAdapter(prisma),
+  adapter: PrismaAdapter(prisma) as Adapter,
   providers: [
     TwitchProvider({
       clientId: process.env.TWITCH_CLIENT_ID!,
