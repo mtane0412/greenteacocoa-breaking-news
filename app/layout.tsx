@@ -6,7 +6,7 @@ import { Providers } from "./components/providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Twitch Breaking News",
+  title: "GrenteaCocoa Breaking News",
   description: "Twitchの最新情報をお届けします",
 };
 

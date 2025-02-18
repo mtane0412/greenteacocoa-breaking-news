@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4 py-8 max-w-2xl">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-2xl font-bold">Twitch Breaking News</h1>
+        <h1 className="text-2xl font-bold">GreenteaCocoa Breaking News</h1>
         {!session && (
           <Button
             onClick={() => signIn('twitch')}
